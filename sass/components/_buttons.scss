@@ -1,0 +1,17 @@
+@use "../abstract/varibles"as vars;
+
+@mixin button_style {
+    width: 180px;
+    height: 55px;
+    border-radius: 40px;
+    border: 1px solid #145855;
+    color: vars.$fullgreen;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    background-color: transparent;
+    text: {
+        transform: capitalize;
+    }
+}

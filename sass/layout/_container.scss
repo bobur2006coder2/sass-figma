@@ -1,0 +1,7 @@
+@use "../abstract/mixins";
+@include mixins.media-sm{
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

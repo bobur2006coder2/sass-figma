@@ -1,0 +1,157 @@
+@use "../abstract/varibles"as vars;
+@use "../components/textstyle";
+@use "../components/buttons";
+@use "../components/imgstyles"as stylimg;
+@use "../components/boxcards";
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap-4 {
+    gap: 40px;
+}
+
+nav {
+    padding-top: 40px;
+    background-color: vars.$bg-color;
+}
+
+header {
+    background: {
+        color: vars.$bg-color;
+    }
+
+    ;
+}
+
+.green-text {
+    @include textstyle.green-text;
+}
+
+.headtop-text {
+    @include textstyle.headerTop-text;
+}
+
+.black-text {
+    @include textstyle.black-text;
+}
+
+.btn-header {
+    @include buttons.button_style;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.one_circle {
+    @include vars.circle-one;
+}
+
+.img-group {
+    @include stylimg.img-group;
+}
+
+.img-circle {
+    @include stylimg.img-one;
+}
+
+.par-div {
+    position: relative;
+    top: 80px;
+    left: -10%;
+}
+
+.img-end {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+
+.one-img {
+    border-radius: 30px;
+}
+
+.gap-8 {
+    gap: 80px;
+}
+
+.ml-10 {
+    margin-left: 100px;
+}
+
+article {
+    background: {
+        color: vars.$bg-color;
+    }
+
+    ;
+}
+
+.top-li {
+    @include textstyle.atc-textli;
+}
+
+.text-li {
+    @include textstyle.bottomul;
+}
+
+.for-art {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.box-card{
+    @include boxcards.box-style;
+    ~p{
+        color: vars.$fullgreen;
+    }
+}
+footer{
+    background: {
+        color: vars.$bg-color;
+    }
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+    ;
+    .ulwidth{
+        padding-top: 50px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    li,p{
+        margin-top:  10px;
+        color: #5C6880;
+    }
+    .foter-li{
+        color: black;
+        font-size: 22px;
+    }
+    .footer-finished{
+        position: absolute;
+        left: 89%;
+        top: 530%;
+    }
+    i{
+        margin-top: 50px;
+        font-size: 25px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
