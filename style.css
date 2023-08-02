@@ -68,7 +68,13 @@ header {
   font-weight: 500;
   letter-spacing: 0em;
   background-color: transparent;
+  transition: all 1s;
   text-transform: capitalize;
+}
+.btn-header:hover {
+  background-color: #145855;
+  color: white;
+  transition: all 1s;
 }
 
 i {
@@ -86,6 +92,7 @@ i {
 .one_circle {
   position: absolute;
   left: 38%;
+  display: block;
 }
 
 .img-group {
@@ -117,6 +124,7 @@ i {
 
 .one-img {
   border-radius: 30px;
+  width: 30%;
 }
 
 .gap-8 {
@@ -124,7 +132,8 @@ i {
 }
 
 .ml-10 {
-  margin-left: 100px;
+  margin-top: 150px;
+  margin-left: 150px;
 }
 
 article {
@@ -174,18 +183,14 @@ footer .ulwidth {
   width: 50%;
   margin: 0 auto;
 }
-footer li, footer p {
+footer li,
+footer p {
   margin-top: 10px;
   color: #5C6880;
 }
 footer .foter-li {
   color: black;
   font-size: 22px;
-}
-footer .footer-finished {
-  position: absolute;
-  left: 89%;
-  top: 530%;
 }
 footer i {
   margin-top: 50px;
@@ -194,10 +199,115 @@ footer i {
   border-radius: 50%;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 350px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .between {
+    justify-content: center;
+  }
+  .black-text {
+    font-size: 24px;
+  }
+  .gap-4 {
+    gap: 10px;
+  }
+  .img-group,
+  .img-end {
+    display: none;
+  }
+  .green-text {
+    font-size: 25px;
+  }
+  .ml-10 {
+    margin-left: 30px;
+  }
+  .footer-finished {
+    position: absolute;
+    left: 89%;
+    top: 50%;
+    display: none;
+  }
+  .one_circle {
+    position: absolute;
+    left: 38%;
+    display: block;
+    display: none;
+  }
+  .one-img {
+    border-radius: 30px;
+    width: 70%;
+  }
+  .list-item {
+    display: none;
+  }
+  .headtop-text {
+    margin-top: 50px;
+  }
+  .d-none {
+    display: none;
+  }
+  .img-circle {
+    top: 80%;
+  }
+}
 @media screen and (min-width: 640px) {
   .container {
     width: 90%;
     margin: 0 auto;
+  }
+  .img-circle {
+    top: 60%;
+  }
+  .between {
+    justify-content: space-between;
+  }
+  .d-none {
+    display: block;
+  }
+  .black-text {
+    font-size: 50px;
+  }
+  .list-item {
+    display: block;
+  }
+  .one-img {
+    border-radius: 30px;
+    width: 30%;
+  }
+  .gap-4 {
+    gap: 40px;
+  }
+  .img-group,
+  .img-end {
+    display: block;
+  }
+  .green-text {
+    font-size: 60px;
+  }
+  .ml-10 {
+    margin-left: 10px;
+  }
+  .footer-finished {
+    position: absolute;
+    left: 88%;
+    top: 515%;
+    display: block;
+  }
+  .one_circle {
+    position: absolute;
+    left: 38%;
+    display: block;
+  }
+  .headtop-text {
+    margin-top: 0px;
   }
 }
 

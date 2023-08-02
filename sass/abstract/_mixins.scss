@@ -3,5 +3,9 @@
         @content;
     }
 }
-
+@mixin media-responsive{
+    @media screen and (min-width:350px) {
+        @content;
+    }
+}
 
