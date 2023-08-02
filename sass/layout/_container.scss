@@ -67,6 +67,12 @@
     .img-circle{
         top: 80%;
     }
+    .justify-center{
+        justify-content: center;
+    }
+    .poy{
+        display: none;
+    }
 }
 
 @include mixins.media-sm {
@@ -76,6 +82,10 @@
     }
     .img-circle{
         top: 60%;
+    }
+    
+    .justify-center{
+        justify-content: center;
     }
     .between{
         justify-content: space-between;
@@ -125,4 +135,12 @@
     .headtop-text{
         margin-top: 0px;
     }
+    .poy{
+        display: block;
+        position: absolute;
+        top: 30%;
+        right: 100%;
+
+    }
+    
 }
